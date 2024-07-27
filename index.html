@@ -15,10 +15,54 @@
 			<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 			<script defer src="./assets/maugallery.js"></script>
 			<script defer src="assets/script.js"></script>
+			<script type="application/ld+json">
+				{
+				"@context": "https://schema.org",
+				"@type": "ItemList",
+				"itemListElement": [
+				{
+					"@type": "Product",
+					"name": "Shooting photo",
+					"description": "Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos.",
+					"image": "assets/images/slider/couple-married-bride-smack-watch.webp",
+					"offers": {
+					"@type": "Offer",
+					"price": "350",
+					"priceCurrency": "EUR",
+					"description": "Matériel, déplacement inclus"
+					}
+				},
+				{
+					"@type": "Product",
+					"name": "Retouches",
+					"description": "Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications.",
+					"image": "assets/images/slider/youth-concert-party-fun.webp",
+					"offers": {
+					"@type": "Offer",
+					"price": "50",
+					"priceCurrency": "EUR",
+					"description": "2 AR par photo"
+					}
+				},
+				{
+					"@type": "Product",
+					"name": "Album photos",
+					"description": "Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé.",
+					"image": "assets/images/slider/couple-married-bride-smack-watch.webp",
+					"offers": {
+					"@type": "Offer",
+					"price": "400",
+					"priceCurrency": "EUR",
+					"description": "30 pages recto/verso"
+					}
+				}
+				]
+			}
+			</script>
 		</head>
 		<body>
 			<header>
-				<h1 itemprop="name">Nina Carducci</h1>
+				<h1>Nina Carducci</h1>
 				<nav>
 					<ul>
 						<li><a href="#about">À propos</a></li>
@@ -30,16 +74,16 @@
 				</nav>
 			</header>
 			<main>
-				<div itemscope itemtype="http://schema.org/Photograph" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-indicators">
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 					</div>
 					<div class="carousel-inner">
-						<div class="carousel-item active"><img itemprop="image" fetchpriority="high" decoding="async" src="assets/images/slider/bussinessman-suitcase-pedestrian-man.webp" class="d-block w-100" alt="Homme d'affaires tenant une malette en cuir avec pour arrière-plan des lignes blanches de passage piéton en diagonale."></div>
-						<div class="carousel-item"><img itemprop="image" src="./assets/images/slider/youth-concert-party-fun.webp" class="d-block w-100" alt="Jeunes en plein concert."></div>
-						<div class="carousel-item"><img itemprop="image" src="./assets/images/slider/couple-married-bride-smack-watch.webp" class="d-block w-100" alt="Couple de mariés s'embrassant. A gauche et à droite, des invités applaudissant, laissant le couple apparaître au milieu."></div>
+						<div class="carousel-item active"><img fetchpriority="high" decoding="async" src="assets/images/slider/bussinessman-suitcase-pedestrian-man.webp" class="d-block w-100" alt="Homme d'affaires tenant une malette en cuir avec pour arrière-plan des lignes blanches de passage piéton en diagonale."></div>
+						<div class="carousel-item"><img src="./assets/images/slider/youth-concert-party-fun.webp" class="d-block w-100" alt="Jeunes en plein concert."></div>
+						<div class="carousel-item"><img src="./assets/images/slider/couple-married-bride-smack-watch.webp" class="d-block w-100" alt="Couple de mariés s'embrassant. A gauche et à droite, des invités applaudissant, laissant le couple apparaître au milieu."></div>
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -52,11 +96,11 @@
 				</div>
 				<div id="about">
 					<div class="picture left">
-						<img itemprop="image" fetchpriority="high" decoding="async" src="assets/images/Nina-Carducci-photographe-professionnelle.webp" alt="Portrait de Nina, habillée d'une marinière bleue et blanche foncée et d'une saloppette bleue en jean.">
+						<img fetchpriority="high" decoding="async" src="assets/images/Nina-Carducci-photographe-professionnelle.webp" alt="Portrait de Nina, habillée d'une marinière bleue et blanche foncée et d'une saloppette bleue en jean.">
 					</div>
-					<article class="about-me" itemscope itemtype="http://schema.org/Person">
+					<article class="about-me">
 						<h2>A propos de moi</h2>
-						<h3 itemprop="description">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3>
+						<h3>Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3>
 						<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 					</article>
 				</div>
