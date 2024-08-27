@@ -2,8 +2,25 @@
 	<html lang="fr">
 		<head>
 			<title>Nina Carducci | 68 avenue Alsace-Lorraine, 33200 Bordeaux | Photographe portraits & événementiel</title>
-			<meta name="description" content="Je suis Nina Carducci, photographe professionnelle depuis 5 ans, grâce à mon expérience je propose des services qualitatifs. Ainsi je vous proposerai les meilleurs shootings photo, retouches ou albums photo au meilleur prix !">
+			<!-- Primary Meta Tags -->
+			<meta name="title" content="Nina Carducci" />
+			<meta name="description" content="Nina Carducci Photographe portraits & événementiel 📸" />
+			<!-- Open Graph / Facebook -->
+			<meta property="og:type" content="website" />
+			<meta property="og:url" content="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fninacarducci.photo%2Ffollowers%2F%3Fhl%3Dfr&is_from_rle" />
+			<meta property="og:title" content="Instagram" />
+			<meta property="og:description" content="Nina Carducci Photographe portraits & événementiel 📸" />
+			<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+			<!-- Twitter -->
+			<meta property="twitter:card" content="summary_large_image" />
+			<meta property="twitter:url" content="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fninacarducci.photo%2Ffollowers%2F%3Fhl%3Dfr&is_from_rle" />
+			<meta property="twitter:title" content="Instagram" />
+			<meta property="twitter:description" content="Nina Carducci Photographe portraits & événementiel 📸" />
+			<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+			<!-- page -->
 			<link rel="preload" as="image" href="assets/images/Nina-Carducci-photographe-professionnelle.webp">
+			<link rel="preload" as="image" href="assets/images/slider/bussinessman-suitcase-pedestrian-man.webp">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 			<link rel="stylesheet" href="./assets/style.css">
@@ -15,11 +32,11 @@
 			<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 			<script defer src="./assets/maugallery.js"></script>
 			<script defer src="assets/script.js"></script>
-			<script type="application/ld+json">
+			<script type="application/ld+json"> changer le type qui est mauvais, pas itemlist
 				{
 				"@context": "https://schema.org",
-				"@type": "ItemList",
-				"itemListElement": [
+				"@type": "Service", 
+				"offers": [
 				{
 					"@type": "Product",
 					"name": "Shooting photo",
@@ -56,6 +73,20 @@
 					"description": "30 pages recto/verso"
 					}
 				}
+				{
+					"@type": "Person",
+					"adress": {
+						"@type": "PostalAdress",
+						"addressLocality": "Bordeaux",
+						"postalCode": "33200",
+						"streetAddress": "68 avenue Alsace-Lorraine"
+					}
+					"image": "/assets/images/Nina-Carducci-photographe-professionnelle.webp",
+					"jobTitle": "Photographer",
+					"name": "Nina Carducci",
+					"telephone": "05 56 67 78 89",
+					"url": "https://maxinc0de.github.io/NinaC/"
+				}
 				]
 			}
 			</script>
@@ -81,9 +112,21 @@
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 					</div>
 					<div class="carousel-inner">
-						<div class="carousel-item active"><img fetchpriority="high" decoding="async" src="assets/images/slider/bussinessman-suitcase-pedestrian-man.webp" class="d-block w-100" alt="Homme d'affaires tenant une malette en cuir avec pour arrière-plan des lignes blanches de passage piéton en diagonale."></div>
-						<div class="carousel-item"><img src="./assets/images/slider/youth-concert-party-fun.webp" class="d-block w-100" alt="Jeunes en plein concert."></div>
-						<div class="carousel-item"><img src="./assets/images/slider/couple-married-bride-smack-watch.webp" class="d-block w-100" alt="Couple de mariés s'embrassant. A gauche et à droite, des invités applaudissant, laissant le couple apparaître au milieu."></div>
+						<div class="carousel-item active"><img fetchpriority="high" decoding="async" class="d-block w-100" alt="Homme d'affaires tenant une malette en cuir avec pour arrière-plan des lignes blanches de passage piéton en diagonale."
+							srcset="assets/images/slider/300-bussinessman-suitcase-pedestrian-man.webp 300w, assets/images/slider/bussinessman-suitcase-pedestrian-man.webp 800w"
+							sizes="(max-width: 600px) 300px, 800px"
+							src="assets/images/slider/bussinessman-suitcase-pedestrian-man.webp"
+							></div>
+						<div class="carousel-item"><img class="d-block w-100" alt="Jeunes en plein concert."
+							srcset="./assets/images/slider/300-youth-concert-party-fun.webp 300w, ./assets/images/slider/youth-concert-party-fun.webp 800w"
+							sizes="(max-width: 600px) 300px, 800px"
+							src="./assets/images/slider/youth-concert-party-fun.webp"
+							></div>
+						<div class="carousel-item"><img class="d-block w-100" alt="Couple de mariés s'embrassant. A gauche et à droite, des invités applaudissant, laissant le couple apparaître au milieu."
+							srcset="./assets/images/slider/300-couple-married-bride-smack-watch.webp 300w, ./assets/images/slider/couple-married-bride-smack-watch.webp 800w"
+							sizes="(max-width: 600px) 300px, 800px"
+							src="./assets/images/slider/couple-married-bride-smack-watch.webp"
+							></div>
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -96,7 +139,11 @@
 				</div>
 				<div id="about">
 					<div class="picture left">
-						<img fetchpriority="high" decoding="async" src="assets/images/Nina-Carducci-photographe-professionnelle.webp" alt="Portrait de Nina, habillée d'une marinière bleue et blanche foncée et d'une saloppette bleue en jean.">
+						<img fetchpriority="high" decoding="async" alt="Portrait de Nina, habillée d'une marinière bleue et blanche foncée et d'une saloppette bleue en jean."
+						srcset="assets/images/300-Nina-Carducci-photographe-professionnelle.webp 300w, assets/images/Nina-Carducci-photographe-professionnelle.webp 800w"
+						sizes="(max-width: 600px) 300px, 800px"
+						src="assets/images/Nina-Carducci-photographe-professionnelle.webp"
+						>
 					</div>
 					<article class="about-me">
 						<h2>A propos de moi</h2>
@@ -108,15 +155,42 @@
 					<h3>Portfolio</h3>
 					<div class="container py-3">
 						<div class="gallery" style="display: none">
-							<img data-gallery-tag="Concert" alt="Concert à l'éclairage rouge, en bas des mains levées apparaissent, le groupe joue au fond à droite." class="gallery-item" src="./assets/images/gallery/concerts/group-music-concert-party-red.webp">
-							<img data-gallery-tag="Entreprises" alt="Homme en costume noir faisant face, chemise blanche, cravate rouge, montre à la main gauche, cheveux courts, regarde devant." class="gallery-item" src="./assets/images/gallery/entreprise/business-watch-man-suit.webp">
-							<img data-gallery-tag="Entreprises" alt="A gauche, l'arrière d'une tête floutée par le focus, en plein devant, une femme souriant, au tee-shirt bleu et aux cheveux longs" class="gallery-item" src="./assets/images/gallery/entreprise/coworking-team-job-work.webp">
-							<img data-gallery-tag="Mariages" alt="Deux mains à gauche et à droite se touchant du bout des doigts. Un homme à gauche, une femme à droite portant une bague de fiancailles." class="gallery-item" src="./assets/images/gallery/mariage/hands-married-couple-love-jewel.webp">
-							<img data-gallery-tag="Portrait" alt="Gros plan sur le visage d'un homme portant un tee shirt noir et deux colliers en argent, ébloui par la lumière du soleil." class="gallery-item" src="./assets/images/gallery/portraits/young-man-sun-jewels-rolemodel.webp">
-							<img data-gallery-tag="Mariages" alt="Mariés souriant et marchant en avant, palmier en arrière-plan. La mariée porte un bouquet." class="gallery-item" src="./assets/images/gallery/mariage/married-flowers-palm-couple-love.webp">
-							<img data-gallery-tag="Portrait" alt="Jeune femme, une main sur une clôture grillée, portant des lunettes, regard vers le bas et portant un pull noir." class="gallery-item" src="assets/images/gallery/portraits/young-lady-rolemodel.webp">
-							<img data-gallery-tag="Concert" alt="Chanteur micro à la bouche levant le bras gauche en l'air, en arrière-plan de la fumée blanche et rouge." class="gallery-item" src="./assets/images/gallery/concerts/concert-color-show-dj-party.webp">
-							<img data-gallery-tag="Entreprises" alt="Jeune femme souriant, assise et travaillant sur son pc, portant un chemisier à pois blancs et un pendentif." class="gallery-item" src="./assets/images/gallery/entreprise/law-acer-work-carreerwoman.webp">
+							<img data-gallery-tag="Concert" alt="Concert à l'éclairage rouge, en bas des mains levées apparaissent, le groupe joue au fond à droite." class="gallery-item"
+							srcset="./assets/images/gallery/concerts/300-group-music-concert-party-red.webp 300w, ./assets/images/gallery/concerts/group-music-concert-party-red.webp 800w"
+							sizes="(max-width: 600px) 300px, 800px"
+							src="./assets/images/gallery/concerts/group-music-concert-party-red.webp">
+							<img data-gallery-tag="Entreprises" alt="Homme en costume noir faisant face, chemise blanche, cravate rouge, montre à la main gauche, cheveux courts, regarde devant." class="gallery-item"
+							srcset="./assets/images/gallery/entreprise/300-business-watch-man-suit.webp 300w, ./assets/images/gallery/entreprise/business-watch-man-suit.webp 800w"
+							sizes="(max-width: 600px) 300px, 800px"
+							src="./assets/images/gallery/entreprise/business-watch-man-suit.webp">
+							<img data-gallery-tag="Entreprises" alt="A gauche, l'arrière d'une tête floutée par le focus, en plein devant, une femme souriant, au tee-shirt bleu et aux cheveux longs" class="gallery-item"
+							srcset="./assets/images/gallery/entreprise/300-coworking-team-job-work.webp 300w, ./assets/images/gallery/entreprise/coworking-team-job-work.webp 800w"
+							sizes="(max-width: 600px) 300px, 800px"
+							src="./assets/images/gallery/entreprise/coworking-team-job-work.webp">
+							<img data-gallery-tag="Mariages" alt="Deux mains à gauche et à droite se touchant du bout des doigts. Un homme à gauche, une femme à droite portant une bague de fiancailles." class="gallery-item"
+							srcset="./assets/images/gallery/mariage/300-hands-married-couple-love-jewel.webp 300w, ./assets/images/gallery/mariage/hands-married-couple-love-jewel.webp 800w"
+							sizes="(max-width: 600px) 300px, 800px"
+							src="./assets/images/gallery/mariage/hands-married-couple-love-jewel.webp">
+							<img data-gallery-tag="Portrait" alt="Gros plan sur le visage d'un homme portant un tee shirt noir et deux colliers en argent, ébloui par la lumière du soleil." class="gallery-item"
+							srcset="./assets/images/gallery/portraits/young-man-sun-jewels-rolemodel.webp 300w, ./assets/images/gallery/portraits/young-man-sun-jewels-rolemodel.webp 800w"
+							sizes="(max-width: 600px) 300px, 800px"
+							src="./assets/images/gallery/portraits/young-man-sun-jewels-rolemodel.webp">
+							<img data-gallery-tag="Mariages" alt="Mariés souriant et marchant en avant, palmier en arrière-plan. La mariée porte un bouquet." class="gallery-item"
+							srcset="./assets/images/gallery/mariage/300-married-flowers-palm-couple-love.webp 300w, ./assets/images/gallery/mariage/married-flowers-palm-couple-love.webp 800w"
+							sizes="(max-width: 600px) 300px, 800px"
+							src="./assets/images/gallery/mariage/married-flowers-palm-couple-love.webp">
+							<img data-gallery-tag="Portrait" alt="Jeune femme, une main sur une clôture grillée, portant des lunettes, regard vers le bas et portant un pull noir." class="gallery-item"
+							srcset="assets/images/gallery/portraits/300-young-lady-rolemodel.webp 300w, assets/images/gallery/portraits/young-lady-rolemodel.webp 800w"
+							sizes="(max-width: 600px) 300px, 800px"
+							src="assets/images/gallery/portraits/young-lady-rolemodel.webp">
+							<img data-gallery-tag="Concert" alt="Chanteur micro à la bouche levant le bras gauche en l'air, en arrière-plan de la fumée blanche et rouge." class="gallery-item"
+							srcset="./assets/images/gallery/concerts/300-concert-color-show-dj-party.webp 300w, ./assets/images/gallery/concerts/concert-color-show-dj-party.webp 800w"
+							sizes="(max-width: 600px) 300px, 800px"
+							src="./assets/images/gallery/concerts/concert-color-show-dj-party.webp">
+							<img data-gallery-tag="Entreprises" alt="Jeune femme souriant, assise et travaillant sur son pc, portant un chemisier à pois blancs et un pendentif." class="gallery-item"
+							srcset="./assets/images/gallery/entreprise/300-law-acer-work-carreerwoman.webp 300w, ./assets/images/gallery/entreprise/law-acer-work-carreerwoman.webp 800w"
+							sizes="(max-width: 600px) 300px, 800px"
+							src="./assets/images/gallery/entreprise/law-acer-work-carreerwoman.webp">
 						</div>
 					</div>
 				</article>
@@ -187,7 +261,10 @@
 					</form>
 				</div>
 				<div class="picture right">
-					<img src="./assets/images/leica-camera-shooting.webp" alt="Appareil photo">
+					<img alt="Appareil photo"
+					srcset="./assets/images/250-leica-camera-shooting.webp 300w, ./assets/images/leica-camera-shooting.webp 800w"
+					sizes="(max-width: 600px) 300px, 800px"
+					src="./assets/images/leica-camera-shooting.webp">
 				</div>
 			</footer>
 		</body>
